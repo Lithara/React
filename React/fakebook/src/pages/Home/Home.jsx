@@ -1,6 +1,8 @@
 import React from 'react'
 import LeftPane from '../../components/LeftPane/LeftPane'
-import NavBar from '../../components/NavBar'
+import NavBar from '../../components/Navigation/NavBar'
+import PostPane from '../../components/PostPane/PostPane'
+import RightPane from '../../components/RightPane/RightPane'
 import "./Home.css"
 
 export default function Home() {
