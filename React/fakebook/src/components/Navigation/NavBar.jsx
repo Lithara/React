@@ -9,7 +9,7 @@ export default function NavBar() {
   return (
     <div class="navBarBox">
         <div className="navBarLeft">
-          <span className="logo">facebook</span>
+          <span className="logo">fakebook</span>
         </div>
         <div className="navBarCenter">
           <div className="searchBarBox">
