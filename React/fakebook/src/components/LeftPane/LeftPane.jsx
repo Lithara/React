@@ -56,6 +56,42 @@ export default function LeftPane() {
             <AddShoppingCartIcon className="leftPaneMenuIcon"/>
             <span className="leftPaneMenuText">Market</span>
           </li>
+          <hr/>
+          <div className="pagesYouLiked">
+            <h3>Pages You Liked</h3>
+          </div>
+          <li className="pageListItem">
+            <img src="/images/1.jpeg" alt="" className="pagePic" />
+            <span className="pageName">Code with Lithara</span>
+          </li>
+          <li className="pageListItem">
+            <img src="/images/1.jpeg" alt="" className="pagePic" />
+            <span className="pageName">Code with Lithara</span>
+          </li>
+          <li className="pageListItem">
+            <img src="/images/1.jpeg" alt="" className="pagePic" />
+            <span className="pageName">Code with Lithara</span>
+          </li>
+          <li className="pageListItem">
+            <img src="/images/1.jpeg" alt="" className="pagePic" />
+            <span className="pageName">Code with Lithara</span>
+          </li>
+          <li className="pageListItem">
+            <img src="/images/1.jpeg" alt="" className="pagePic" />
+            <span className="pageName">Code with Lithara</span>
+          </li>
+          <li className="pageListItem">
+            <img src="/images/1.jpeg" alt="" className="pagePic" />
+            <span className="pageName">Code with Lithara</span>
+          </li>
+          <li className="pageListItem">
+            <img src="/images/1.jpeg" alt="" className="pagePic" />
+            <span className="pageName">Code with Lithara</span>
+          </li>
+          <li className="pageListItem">
+            <img src="/images/1.jpeg" alt="" className="pagePic" />
+            <span className="pageName">Code with Lithara</span>
+          </li>
         </div>
       </div>
     </div>
