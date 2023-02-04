@@ -1,3 +1,24 @@
 .rightPaneBox{
     flex: 3;
+    margin-left: 10px;
+}
+
+.rightPaneContainer{
+    padding: 20px 20px 0 0;
+}
+
+.adContainer{
+    font-family: sans-serif;
+}
+
+.adImage{
+    width: 98%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.sponsored{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(99, 93, 93);
 }
