@@ -13,26 +13,27 @@ export default function AddPost() {
             <img src="/images/1.jpeg" alt="" className="addPostPic" />
             <input placeholder="What's in your mind..." className="addPostInput" />
         </div>
-        <hr/>
+        <hr className="postHr"/>
         <div className="addPostBottom">
           <div className="addPostOptions">
             <div className="addPostOption">
-              <InsertPhotoIcon className="addPhoto" />
+              <InsertPhotoIcon htmlColor="orange" className="addPhoto" />
               <span className="addPostOptionText">Add Photo/Video</span>
             </div>
             <div className="addPostOption">
-              <AddLocationAltIcon className="addPhoto" />
+              <AddLocationAltIcon htmlColor="red" className="addPhoto" />
               <span className="addPostOptionText">Add Location</span>
             </div>
             <div className="addPostOption">
-              <LocalOfferIcon className="addPhoto" />
+              <LocalOfferIcon htmlColor="blue" className="addPhoto" />
               <span className="addPostOptionText">Add Tag</span>
             </div>
             <div className="addPostOption">
-              <LiveTvIcon className="addPhoto" />
+              <LiveTvIcon htmlColor="tomato" className="addPhoto" />
               <span className="addPostOptionText">Go Live</span>
             </div>
           </div>
+          <button className="postButton">Post</button>
         </div>
       </div>
     </div>
