@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function NameListItem() {
+export default function NameListItem(props) {
   return (
     <div>
-       <li>Lithara Perera - Course - CSharp</li>
+       <li>
+        {props.name} - Course - {props.course} - Email - {props.email}
+       </li>
     </div>
   )
 }
