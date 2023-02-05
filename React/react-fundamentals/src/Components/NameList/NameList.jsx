@@ -13,6 +13,10 @@ export default function NameList() {
       "city": "Billings"
     },
     "email": "jennie.nichols@example.com",
+    "dob": {
+      "date": "1992-03-08T15:13:16.688Z",
+      "age": 30
+    },
   };
 
   return (
