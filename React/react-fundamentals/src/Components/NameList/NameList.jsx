@@ -2,6 +2,19 @@ import React from 'react'
 import NameListItem from './NameListItem'
 
 export default function NameList() {
+
+  const nameList = {
+    "name": {
+    "title": "Miss",
+    "first": "Jennie",
+    "last": "Nichols"
+    },
+    "location": {
+      "city": "Billings"
+    },
+    "email": "jennie.nichols@example.com",
+  };
+
   return (
     <React.Fragment>
       <h1>Name List</h1>
