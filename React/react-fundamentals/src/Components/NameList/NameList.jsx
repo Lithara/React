@@ -5,6 +5,7 @@ export default function NameList() {
 
   const nameList = [
    { 
+    id: 1,
     name : { title: 'mr', first: 'rafael', last: 'leroux' },
     location : { city: 'madrid' },
     email: 'rafael.leroux@example.com',
@@ -12,6 +13,7 @@ export default function NameList() {
     picture: { medium: 'https://randomuser.me/api/portraits/med/men/75.jpg' },
   },
   {
+    id: 2,
     name : {
     title : 'miss',
     first : 'jennie',
@@ -30,6 +32,7 @@ export default function NameList() {
     },
   },
   {
+    id: 3,
     name : {
     title : 'mr',
     first : 'bred',
@@ -49,18 +52,29 @@ export default function NameList() {
   },
 ];
 
+const nameListComponent = () => {
+  return (
+    nameList.map(aName => {
+      return (
+        <NameListItem 
+          key={aName.id}
+          name={aName.name.first + ' ' + aName.name.last} 
+          city={aName.location.city}
+          email={nameList.email}
+          birthday={nameList.dob.date}
+          avatar={nameList.picture.medium}
+        />
+      )
+    })
+  );
+};
+
   return (
     <React.Fragment>
       <h1>Name List</h1>
       <hr/>
         <ul>
-          <NameListItem 
-          name={nameList[0].name.first + ' ' + nameList.name.last} 
-          city={nameList[0].location.city}
-          email={nameList[0].email}
-          birthday={nameList[0].dob.date}
-          avatar={nameList[0].picture.medium}
-          />
+          {nameListComponent()}
           <NameListItem 
           name={nameList[1].name.first + ' ' + nameList.name.last} 
           city={nameList[1].location.city}
