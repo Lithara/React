@@ -4,7 +4,12 @@ export default function NameListItem(props) {
   return (
     <div>
        <li>
-        {props.name} - Course - {props.course} - Email - {props.email}
+        <p>
+            <img src={props.avatar} />{props.name}
+        </p>
+        <p>City : {props.city}</p>
+        <p>Email : {props.email}</p>
+        <p>Birthday : {props.birtday}</p>
        </li>
     </div>
   )
