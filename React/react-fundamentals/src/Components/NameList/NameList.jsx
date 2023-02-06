@@ -17,6 +17,9 @@ export default function NameList() {
       "date": "1992-03-08T15:13:16.688Z",
       "age": 30
     },
+    "picture": {
+      "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+    },
   };
 
   return (
@@ -25,29 +28,11 @@ export default function NameList() {
       <hr/>
         <ul>
           <NameListItem 
-          name="Lithara Perera" 
-          course="Csharp" 
-          email="litharaperera@gmail.com"
-          />
-          <NameListItem 
-          name="Wasath Theekshana" 
-          course="React JS" 
-          email="wasaththeekshana@gmail.com"
-          />
-          <NameListItem 
-          name="Lorem Ipsum" 
-          course="Azure" 
-          email="loremipsum@gmail.com"
-          />
-          <NameListItem 
-          name="Fiqri Ismail" 
-          course="Software Arcchitecture" 
-          email="fiqriismail@gmail.com"
-          />
-          <NameListItem 
-          name="Chamindu Sooriyapperuma" 
-          course="Devops" 
-          email="chamindusooriyapperuma@gmail.com"
+          name={nameList.name.first + ' ' + nameList.name.last} 
+          city={nameList.location.city}
+          email={nameList.email}
+          birthday={nameList.dob.date}
+          avatar={nameList.picture.medium}
           />
         </ul>
     </React.Fragment>
