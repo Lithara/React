@@ -7,9 +7,9 @@ export default function NameListItem(props) {
   return (
     <div>
        <li className="list-group-item">
-        <div className="row">
+        <div className="row align-items-center">
           <div className="col-2">
-          <img src={props.avatar} alt={props.name} /> 
+          <img src={props.avatar} alt={props.name} className="border border-dark rounded-circle shadow-sm"/> 
           </div>
           <div className="col-10">
             <h4>{props.name}</h4>
