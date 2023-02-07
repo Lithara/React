@@ -71,25 +71,11 @@ const nameListComponent = () => {
 
   return (
     <React.Fragment>
-      <h1>Name List</h1>
-      <hr/>
-        <ul>
+      <div className="container mt-4">
+        <ul className="list-group">
           {nameListComponent()}
-          <NameListItem 
-          name={nameList[1].name.first + ' ' + nameList.name.last} 
-          city={nameList[1].location.city}
-          email={nameList[1].email}
-          birthday={nameList[1].dob.date}
-          avatar={nameList[1].picture.medium}
-          />
-          <NameListItem 
-          name={nameList[2].name.first + ' ' + nameList.name.last} 
-          city={nameList[2].location.city}
-          email={nameList[2].email}
-          birthday={nameList[2].dob.date}
-          avatar={nameList[2].picture.medium}
-          />
         </ul>
+      </div>
     </React.Fragment>
   )
 }
