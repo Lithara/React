@@ -92,8 +92,29 @@ export default function NameList() {
   };
 
   const addUserHandler = () => {
-    console.log("Button clicked");
-  }
+    const newUser = {
+      id: 3,
+       name : {
+       title : 'mr',
+       first : 'bred',
+       last : 'gibson'
+       },
+       location : {
+         city : 'kilcoole'
+       },
+       email : 'bred.gibson@example.com',
+       dob : {
+         date : '1993-07-20T09:44:18.674Z',
+         age : 26
+       },
+       picture : {
+         medium : 'https://randomuser.me/api/portraits/med/men/8.jpg',
+    },
+  };
+  //setNameList(nameList.concat(newUser));
+  //setNameList([...nameList, newUser]);
+  setNameList(nameList => [...nameList, newUser]);
+};
 
   return (
     <React.Fragment>
