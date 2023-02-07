@@ -7,7 +7,7 @@ export default function NameListItem(props) {
   return (
     <div>
        <li>
-        <p style={{ color: 'green'}}>
+        <p>
             <img src={props.avatar} alt={props.name} /> {props.name}
         </p>
         <p>City : {props.city}</p>
