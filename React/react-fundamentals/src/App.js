@@ -1,5 +1,5 @@
 import './App.css';
-import NameList from './Components/NameList/NameList'
+import NameList from './Components/NameList/NameList';
 
 function App() {
   return (

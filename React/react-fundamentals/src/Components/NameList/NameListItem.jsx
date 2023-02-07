@@ -1,11 +1,13 @@
-import React from 'react'
-import moment from 'moment'
+import React from 'react';
+import moment from 'moment';
+
+import './NameListItem.css';
 
 export default function NameListItem(props) {
   return (
     <div>
        <li>
-        <p>
+        <p className="redText">
             <img src={props.avatar} alt={props.name} /> {props.name}
         </p>
         <p>City : {props.city}</p>

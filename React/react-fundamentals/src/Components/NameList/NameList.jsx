@@ -1,5 +1,5 @@
-import React from 'react'
-import NameListItem from './NameListItem'
+import React from 'react';
+import NameListItem from './NameListItem';
 
 export default function NameList() {
 
