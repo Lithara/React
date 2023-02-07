@@ -1,5 +1,7 @@
-import React from 'react'
-import moment from 'moment'
+import React from 'react';
+import moment from 'moment';
+
+import './NameListItem.css';
 
 export default function NameListItem(props) {
   return (
