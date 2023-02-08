@@ -119,20 +119,6 @@ export default function NameList() {
     });
   };
 
-   getNum = () => {
-    const n1 = "2"
-    const n2 = "2"
-    const m3 = n1 + n2
-
-    return(
-      <div>
-
-      </div>
-    )
-
-  }
-
-
 
 
   return (
@@ -142,7 +128,7 @@ export default function NameList() {
           Add Name
         </button>
         <ul className="list-group">{nameListComponent()}</ul>
-        getNum()
+        getNum
       </div>
     </React.Fragment>
   );
