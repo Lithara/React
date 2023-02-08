@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NameListItem from "./NameListItem";
 
 export default function NameList() {
@@ -78,10 +78,14 @@ export default function NameList() {
     
   ]);
 
+  useEffect(() => {
+    console.log('RENDER METHOD CALLED');
+  });
+
 
   const addUserHandler = () => {
     const newUser = {
-      id: 9,
+      id: new Date(),
       name: {
         title: "mr",
         first: "bred",
@@ -128,7 +132,6 @@ export default function NameList() {
           Add Name
         </button>
         <ul className="list-group">{nameListComponent()}</ul>
-        getNum
       </div>
     </React.Fragment>
   );
