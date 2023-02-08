@@ -79,7 +79,9 @@ export default function NameList() {
   ]);
 
   useEffect(() => {
-    console.log('RENDER METHOD CALLED');
+    fetch("https://randomuser.me/api").then((response) => {
+      console.log(response);
+    });
   });
 
 
