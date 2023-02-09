@@ -104,8 +104,8 @@ export default function NameList() {
   };
 
   const addUserHandler = () => {
-    setLoadData(true);
-  }
+    setLoadData(new Date());
+  };
 
   return (
     <React.Fragment>
