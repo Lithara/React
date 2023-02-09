@@ -3,7 +3,7 @@ import NameListItem from "./NameListItem";
 
 export default function NameList() {
 
-  
+  const [loadData, setLoadData] = useState(false);
   const [nameList, setNameList] = useState([
 
     {
@@ -83,9 +83,9 @@ export default function NameList() {
       return response.json();
     })
     .then((responseData) => {
-      setNameList([responseData.results[0]]);
+      setNameList(nameList => [...nameList, responseData.results[0]]);
     });
-  });
+  }, [loadData]);
 
 
   const addUserHandler = () => {
