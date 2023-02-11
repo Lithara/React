@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';Link
 
 export default function HeaderBar() {
   return (
@@ -6,19 +7,19 @@ export default function HeaderBar() {
         <span className="navBar-brand mb-0 h1">Name List</span>
         <ul classNmae="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <Link className="nav-link" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <Link className="nav-link" to="/about">
               About
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <Link className="nav-link" to="/namelist">
               Show Name List
-            </a>
+            </Link>
           </li>
         </ul>
     </nav>
